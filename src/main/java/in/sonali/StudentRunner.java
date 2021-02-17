@@ -13,7 +13,12 @@ public class StudentRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		int a=10;
-		log.info("Stared");
+		try {
+			log.info("Stared");
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 		// TODO Auto-generated method stub
 		System.out.println("WEL COME TO INDIA"+a);
 		log.info("End");
